@@ -35,9 +35,9 @@ $scope.LoadArticles=function(){
 	$scope.hidelodr=false;
 	
 	$http({
-		method:'POST',
+		method:'GET',
 		url:'https://www.clancap.com/touch/srvc/dbgetCont.php?a=a&b=b', 
-		data:$.param({l:0}),
+		//data:$.param({l:0}),
 		headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
 
 	}).success(function(data1) {
