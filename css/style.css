@@ -151,7 +151,7 @@ a:hover {
 
 
 .box {
-	margin-top:70px;
+	/*margin-top:70px;*/
 	text-align:center;	
 	background:#f9f9f9;
 }
@@ -159,7 +159,7 @@ a:hover {
 	text-transform:uppercase;
 	margin-top:50px;
 	margin-bottom:80px;
-	padding:50px;
+	/*padding:50px;*/
 }
 .box i {
 	color:#fff;
