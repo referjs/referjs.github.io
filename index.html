@@ -77,7 +77,7 @@
 
 		  <div class="carousel-inner" >
 		    <div ng-repeat="article in articles"  ng-class="($index==0) ? 'item active' : 'item'" >
-		      <img width="100%" ng-src="/touch/srvc/profiles.php?i=k&k={{article.mi}}" class="img-responsive">
+		      <img width="100%" ng-src="{{article.mi}}" class="img-responsive">
 		      <div class="container">
 		        <div class="carousel-caption">
 		        <a style=" " ng-href="/touch/srvc/post.php?a={{article.a}}" >
