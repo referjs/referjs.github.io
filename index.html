@@ -142,28 +142,28 @@
 		<div class="box">
 			<div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.4s">
 				<div class="col-sm-2">
-					<img width="100%" src="images/android-icon.png" />
+					<img width="50%" src="images/android-icon.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="https://play.google.com/store/apps/details?id=com.clancap.www"><i class="fa fa-cloud-download fa-3x"></i></a></h4>
 				</div>
 			</div>
 			<div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.8s">
 				<div class="col-sm-2">
-					<img  width="100%" src="images/iosapp.png" />
+					<img  width="50%" src="images/iosapp.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="#"><i class="fa fa-cloud-download fa-3x"></i><br/></a>Coming Soon</h4>
 				</div>
 			</div>
 			<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
 				<div class="col-sm-2">
-					<img  width="100%" src="images/wpapp.png" />
+					<img  width="50%" src="images/wpapp.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="#"><i class="fa fa-cloud-download fa-3x"></i></a><br/>Coming Soon</h4>
 				</div>
 			</div>
 			<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
 				<div class="col-sm-2">
-					<img  width="100%" src="images/ccwebappicon.png" />
+					<img  width="50%" src="images/ccwebappicon.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="/touch/"><i class="fa fa-cloud fa-3x"></i></a></h4>
 				</div>
@@ -171,14 +171,14 @@
 			
 			<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
 				<div class="col-sm-2">
-					<img  width="100%" src="images/Blackberry-icon.png" />
+					<img  width="50%" src="images/Blackberry-icon.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="/touch/"><i class="fa fa-cloud fa-3x"></i></a></h4>
 				</div>
 			</div>
 			<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
 				<div class="col-sm-2">
-					<img  width="100%" src="images/amazon-firefoxos.png" />
+					<img  width="50%" src="images/amazon-firefoxos.png" />
 					<!--i class="fa fa-cogs fa-3x"></i-->
 					<h4><a href="/touch/"><i class="fa fa-cloud fa-3x"></i></a></h4>
 				</div>
@@ -278,7 +278,7 @@
 				</div>
 				<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
 					<div class="col-md-3">
-						<img src="images/PaulAnderson.jpg" alt="Paul Anderson" >
+						<img width="100%" src="images/PaulAnderson.jpg" alt="Paul Anderson" >
 						<h3>Paul Anderson</h3>
 						<p>Clancap has a very good understanding of the client's requirement. Their ability to revert with relevant profiles within a short turnaround time is really commendable. The closure rate is pretty good as well.</p>
 					</div>
@@ -286,7 +286,7 @@
 				
 				<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
 					<div class="col-md-3">
-						<img src="images/VinayRajput.jpg" alt="VinayRajput" >
+						<img width="100%"  src="images/VinayRajput.jpg" alt="VinayRajput" >
 						<h3>Vinay Rajput</h3>
 						<p>"We have found the team at 'Clancap' to be focused and energetic. They take time to understand our needs and present us with candidates who are well suited for the roles".</p>
 					</div>
@@ -294,7 +294,7 @@
 				
 				<div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
 					<div class="col-md-3">
-						<img src="images/TanviTrivedi.jpg" alt="TanviTrivedi" >
+						<img width="100%"  src="images/TanviTrivedi.jpg" alt="TanviTrivedi" >
 						<h3>Tanvi Singh</h3>
 						<p>Clancap have a very unique way to search for the right talent and follow-up has been superb. Further, I fully endorse that the quality of people makes the organization.</p>
 					</div>
@@ -302,7 +302,7 @@
 				
 				<div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.6s">
 					<div class="col-md-3">
-						<img src="images/DanaLyetus.jpg" alt="DanaLyetus" >
+						<img width="100%"  src="images/DanaLyetus.jpg" alt="DanaLyetus" >
 						<h3>Dana Lyetus</h3>
 						<p>Clancap has been instrumental in assisting in identifying and bringing in some excellent talent into our organization. We wish the team the very best.</p>
 					</div>
@@ -328,12 +328,10 @@
 				</div>
 				
 				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
-					<h3>RECENT POSTS</h3>
-					<ul>
-						<li>Awesome Design with Overviews</li><hr>
-						<li>Great Design with Features </li><hr>
-						<li>Limitless functions & Works </li><hr>
-						<li>Multi is simple and clean design</li>
+					<h3   >RECENT POSTS</h3>
+					<ul style="list-style-type: circle;">
+						<li  ng-repeat="article in articles" ng-cloak>{{article.t}}</li><hr>
+						
 					</ul>
 				</div>
 				

@@ -43,7 +43,7 @@ a:hover {
 
 .btn-primary {
 	padding: 8px 20px;
-	background: #ED502E;
+	background: #5853A8;
 	color: #fff;
 	border:none;
 	margin-top: 20px;
@@ -77,7 +77,7 @@ a:hover {
 
 .btn-default:hover {
 	background-color:#f9f9f9;
-	color:#ED502E;
+	color:<br/>;
 	border-color: #fff;	
 }
 
@@ -97,7 +97,7 @@ a:hover {
 	color:#333;		
 }
 .navbar-brand h1 span {
-	color: #ED502E;
+	color: #5853A8;
 }
 
 .menu {
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .nav-tabs > li > a:hover {	
-	color: #ED502E;
+	color: #5853A8;
 	border-color: #fff #fff #fff;
 	border-radius:0;
 	background-color:#fff; 
@@ -135,7 +135,7 @@ a:hover {
 	-o-transition: all 0.3s ease-in-out;
 }
 .nav-tabs > li > a.active {
-	color: #ED502E;
+	color: #5853A8;
 	border-radius:0;
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -165,10 +165,10 @@ a:hover {
 	color:#fff;
 	border-radius:50%;
 	padding:20px;
-	background:#ED502E;
+	background:#5853A8;
 }
 .box i:hover {
-	color:#ED502E;
+	color:#5853A8;
 	background:#fff;
 }
 
@@ -199,7 +199,7 @@ a:hover {
 .main-feature .media i {
 	border-radius:50%;
 	padding:20px;
-	background:#ED502E;
+	background:#5853A8;
 	color:#fff;
 }
 
@@ -431,12 +431,12 @@ a:hover {
 }
 
 .blog_category li a:hover{
-  background:#ED502E;
+  background:#5853A8;
   color: #fff;
 }
 
  .badge:before {
-  border-color: transparent transparent transparent #ED502E;
+  border-color: transparent transparent transparent #5853A8;
   border-style: solid;
   border-width: 10px;
   bottom: -8px;
@@ -448,7 +448,7 @@ a:hover {
 }
 
 .badge {
-  background-color: #ED502E;
+  background-color: #5853A8;
   border-radius: 5px;
   color: #fff;
   padding: 8px;
@@ -589,7 +589,7 @@ ul.faq li > div h3 {
 }
 
 #publish_date {
-  background: #ED502E;
+  background: #5853A8;
   border-bottom: 5px solid #4e4e4e;
   color: #fff;
   padding: 5px 0;
@@ -622,8 +622,8 @@ ul.pagination > li > a i{
 
 ul.pagination > li.active > a, 
 ul.pagination > li:hover > a {
-  background-color: #ED502E !important;
-  border-color: #ED502E !important;
+  background-color: #5853A8 !important;
+  border-color: #5853A8 !important;
   color: #fff;
 }
 
@@ -663,7 +663,7 @@ ul.sidebar-gallery {
 }
 
 .tag-cloud li a:hover{
-  background:#ED502E;
+  background:#5853A8;
   color: #fff;  
 }
 
@@ -714,7 +714,7 @@ ul.sidebar-gallery {
   height: 100%;
   opacity: 0;
   border-radius: 0;
-  background: #ED502E;
+  background: #5853A8;
   color: #fff;
   vertical-align: middle;
   -webkit-transition: opacity 500ms;
@@ -773,8 +773,8 @@ ul.sidebar-gallery {
 .portfolio-filter > li a:hover,
 .portfolio-filter > li a.active{
   color:#fff;
-  background: #ED502E;
-  border: 1px solid #ED502E;
+  background: #5853A8;
+  border: 1px solid #5853A8;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -979,7 +979,7 @@ ul.social-network li a {
 	font-size:13px;
 }
 .footer ul li:hover {
-	color:#ED502E;
+	color:#5853A8;
 	cursor:pointer;	
 }
 
@@ -989,7 +989,7 @@ ul.social-network li a {
 }
 
 .sub-footer a:hover {
-  color: #ED502E;
+  color: #5853A8;
 }
 
 .sub-footer {
@@ -1026,6 +1026,6 @@ a.scrollup{
 }
 a.scrollup:hover{
 	opacity:1;
-	background-color:#ED502E;
+	background-color:#5853A8;
 	color:#fff;;	
 }
