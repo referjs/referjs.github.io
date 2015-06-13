@@ -1,4 +1,4 @@
-var ojp = angular.module('orgjswapp',[]);
+var ojp = angular.module('orgjswapp',['ngSanitize']);
 
 /*
 This directive allows us to pass a function in on an enter key to do what we want.
