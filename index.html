@@ -121,7 +121,7 @@
 		      <img width="100%" ng-src="{{article.mi}}" class="img-responsive">
 		      <div class="container">
 		        <div class="carousel-caption">
-		        <a style=" " ng-href="https://www.clancap.com/touch/srvc/post.php?a={{article.a}}" >
+		        <a target="_blank" style=" " ng-href="post.html?a={{article.a}}" >
 		        	<h3 style="color:blue; background-color: rgba(255, 255, 255, 0.6);
     
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
@@ -379,7 +379,7 @@
 				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
 					<h3   >RECENT POSTS</h3>
 					<ul style="list-style-type: circle;">
-						<li  ng-repeat="article in articles" ng-cloak>{{article.t}}</li><hr>
+						<li  ng-repeat="article in articles" ng-cloak><a target="_blank" style=" " ng-href="post.html?a={{article.a}}" >{{article.t}}</a></li><hr>
 						
 					</ul>
 				</div>

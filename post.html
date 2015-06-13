@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="ajpctrlr" ng-app="orgjswapp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="clancap Admin">
+    <meta name="author" content="prabhatkr@gmail.com">
+
+    <title>Clancap : {{articletitle}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />  
+
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body >
+     
+  
+
+    
+        
+        <header>     
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navigation">
+                <div class="container">                 
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="www.clancap.com">
+  <img src="images/ClancapMaillogosite.jpg" alt="HTML tutorial">
+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="navbar-collapse collapse">                          
+                        <div class="menu">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation"><a href="index.html" class="active">Home</a></li>
+                                <!--li role="presentation"><a href="services.html">Services</a></li>
+                                <li role="presentation"><a href="blog.html">Blog</a></li>
+                                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
+                                <li role="presentation"><a href="contact.html">Contact</a></li-->                       
+                            </ul>
+                        </div>
+                    </div>                      
+                </div>
+            </div>  
+        </nav>      
+    </header>
+
+        <img ng-hide="hidelodr" class="ng-hide" src="images/lodr.gif"/>
+
+        
+            
+            <div class="">
+                <div class="col-lg-12 main-feature">
+                    <div class="container panel panel-default">
+                        
+                        <div class="media panel-body">
+                            
+                               
+                                <!-- /.col-lg-6 (nested) -->
+                                
+                                    
+                                        
+                                    
+                                        
+                                        
+                                        
+                                        <img style="float:right" ng-src="{{mainarticleimage}}" width="280" height="280" alt="article Image"/>
+
+                                        <p ng-bind-html="mainarticle"></p>
+                                        
+                                    
+                                    
+                                
+                                
+                                <!-- /.col-lg-6 (nested) -->
+                            
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+
+    
+    <!-- /#wrapper -->
+
+
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="dist/js/sb-admin-2.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+
+
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="js/Usercontrollers.js"></script>
+ 
+<footer>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+                    <h2>Find Us On</h2>
+                    <p> </p>
+                    
+                    <ul class="social-network">
+                        <li><a href="https://www.facebook.com/Clancap" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+                        <li><a href="https://twitter.com/Clancap" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/clancap" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                    
+                        <li><a href="https://plus.google.com/communities/117916653078694921509" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+                    <h3   >RECENT POSTS</h3>
+                    <ul style="list-style-type: circle;">
+                        <li  ng-repeat="article in articles" ng-cloak><a target="_blank" style=" " ng-href="post.html?a={{article.a}}" >{{article.t}}</a></li><hr>
+                        
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                    <h3>CONTACT INFO</h3>
+                    <ul>
+                        <li><i class="fa fa-home fa-2x"></i> Bangalore,India <br/>Toronto, Canada</li><hr>
+                        <li><i class="fa fa-phone fa-2x"></i> India:+91-8600053202,+91-8127772473<br/>Canada:+1 310 929 5300</li><hr>
+                        <li><i class="fa fa-envelope fa-2x"></i> support@clancap.com</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        &copy; 2015 <a target="_blank" href="https://www.clancap.com/" title="Cultural Hiring and Building Great Organisations">Clancap</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="pull-right">
+                            <li><a href="#">Home</a></li>
+                            <!--li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+                </div>
+            </div>
+        </div>  
+
+    </footer>
+</body>
+
+</html>

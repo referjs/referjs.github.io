@@ -27,7 +27,7 @@ ojp.controller('ajpctrlr', ['$scope' ,'$http','$location',function ($scope,$http
 
 	$http({
 		method:'POST',
-		url:'/touch/srvc/dbgetCont.php',
+		url:'https://www.clancap.com/touch/srvc/dbgetCont.php',
 		data:$.param( {aid:aid} ),
 		headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
 
