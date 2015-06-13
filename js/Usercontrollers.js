@@ -52,6 +52,37 @@ ojp.controller('ajpctrlr', ['$scope' ,'$http','$location',function ($scope,$http
   	});
 
 
+
+$scope.LoadArticles=function(){
+	
+	
+
+	$scope.hidelodr=false;
+	
+	$http({
+		method:'GET',
+		url:'https://www.clancap.com/touch/srvc/dbgetCont.php?top10', 
+		//data:$.param({l:0}),
+		headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
+
+	}).success(function(data1) {
+		$scope.LoadArticlesAgain=false;
+		$scope.hidelodr=true;
+		$scope.articles=data1.contdata;
+		console.log($scope.articles);
+		//$scope.assign($scope.articles,data1.contdata);
+	    //console.log( "success",data1.contdata  );
+	}).error(function(err) {
+		$scope.hidelodr=true;
+	    alert( "error" );
+	  });
+
+	$scope.assign=function(a,b){
+		a=b;
+	}
+}
+
+$scope.LoadArticles();
 	/*console.log(me.article.a);
 	  $http.post('/touch/srvc/dbgetCont.php?a='+$scope.userToken+'&b='+$scope.sessionToken, {aid:me.article.a}).
 	  success(function(data, status, headers, config) {
