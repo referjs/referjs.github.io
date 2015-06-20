@@ -61,7 +61,7 @@ $scope.LoadArticles=function(){
 	
 	$http({
 		method:'GET',
-		url:'https://www.clancap.com/touch/srvc/dbgetCont.php?top10', 
+		url:'https://www.clancap.com/touch/srvc/dbgetCont.php?top10=morelikethis', 
 		//data:$.param({l:0}),
 		headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
 
